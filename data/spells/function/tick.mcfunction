@@ -1,0 +1,1 @@
+execute as @e[tag=spell] run function spells:effect
