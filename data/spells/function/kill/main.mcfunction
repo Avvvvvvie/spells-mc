@@ -1,0 +1,1 @@
+$schedule function spells:kill/kill $(time) append

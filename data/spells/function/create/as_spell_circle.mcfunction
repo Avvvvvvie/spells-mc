@@ -1,4 +1,5 @@
 tag @s remove new_spell_circle
+tag @s add spell
 
 # add the newly summoned spell circle to the spell
 scoreboard players operation @s spell = global_id spell
