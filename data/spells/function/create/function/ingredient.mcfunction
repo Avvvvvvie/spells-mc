@@ -1,0 +1,1 @@
+# TODO: make the item display show the ingredient based on storage spells:variables current.ingredient

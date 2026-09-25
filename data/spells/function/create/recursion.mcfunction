@@ -12,7 +12,7 @@ scoreboard players set skip_children spell 0
 function spells:create/process_child
 
 # add all the children to the stack
-execute if score skip_children spell matches 0 if data storage spells:variables current.children[0] run function spells:create/append_children
+execute if data storage spells:variables current.children[0] if score skip_children spell matches 0 run function spells:create/append_children
 
 # continue if there are still children on the stack
 execute if data storage spells:variables stack[0] run function spells:create/recursion
