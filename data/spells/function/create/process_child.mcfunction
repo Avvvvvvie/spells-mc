@@ -1,9 +1,3 @@
-# TODO: summon item display (=spell entity)
+summon item_display ~ ~ ~ { Tags: [ new_spell_circle ] }
 
-# add the newly summoned spell entity to the spell
-tag @s add spell_circle
-scoreboard players operation @s spell = global_id spell
-scoreboard players operation @s spell_family = max_id spell_family
-scoreboard players operation @s spell_parent = current_parent spell_parent
-
-# TODO: add tags based on spells:variables spell.xyz
+execute as @e[type=item_display, tag=new_spell_circle] run function spells:create/as_spell_circle
