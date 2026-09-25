@@ -1,0 +1,1 @@
+$data remove entity @s Item.components."minecraft:custom_data".ingredients[{name: "$(ingredient)"}]
