@@ -1,1 +1,1 @@
-execute as @e[tag=spell] run function spells:effect
+execute as @e[tag=spell_entity] run function spells:effect
