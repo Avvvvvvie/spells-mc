@@ -9,7 +9,7 @@ scoreboard players operation current_family spell_family = max_id spell_family
 scoreboard players set skip_children spell 0
 
 # do stuff with the current child
-execute as @e[tag=spell_circle] if score @s spell = current_spell spell if score @s spell_parent = current_family spell_family run function spells:create/process_child
+execute as @e[tag=spell_circle] if score @s spell = current_spell spell if score @s spell_parent = current_family spell_family at @s run function spells:execute/process_child
 
 # remove from stack unless postorder option was selected
 execute unless data storage spells:variables current.postorder run data remove storage spells:variables stack[0]
