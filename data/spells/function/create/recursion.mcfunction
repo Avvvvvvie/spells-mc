@@ -3,9 +3,9 @@ data modify storage spells:variables current set from storage spells:variables s
 data remove storage spells:variables stack[0]
 
 # save the last family id as the current parent id
-scoreboard players operation current_parent spell_parent = max_id spell_family
+scoreboard players operation current_parent spell_parent = current_family spell_family
 # create a new family id
-scoreboard players add max_id spell_family 1
+scoreboard players add current_family spell_family 1
 
 scoreboard players set skip_children spell 0
 # do stuff with the current child

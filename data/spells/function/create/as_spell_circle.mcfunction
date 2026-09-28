@@ -3,7 +3,7 @@ tag @s add spell
 
 # add the newly summoned spell circle to the spell
 scoreboard players operation @s spell = global_id spell
-scoreboard players operation @s spell_family = max_id spell_family
+scoreboard players operation @s spell_family = current_family spell_family
 scoreboard players operation @s spell_parent = current_parent spell_parent
 
 # set the size accordingly
